@@ -1,0 +1,189 @@
+body {
+    /* The image used */
+    background-image: url("lotr.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+  }
+
+.allforone {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.topster {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 65px;
+    margin-bottom: 0%;
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'myCustomFont', THE BOLD FONT, sans-serif;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    background-color: bisque;
+  }
+
+@font-face {
+  font-family: 'myCustomFont';
+  src: url('THE BOLD FONT - FREE VERSION - 2023.ttf');
+}
+@font-face {
+  font-family: 'yourFontName'; /* you can choose any name */
+  src: url('Aragon Sans Bold.otf') format('opentype');
+}
+
+
+
+
+
+.skrrrt {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.topheavy {
+  padding: 5px;
+  margin: -20px;
+  margin-bottom: 0%;
+  border-style: outset;
+  border-width: 10px;
+  border-color: rgb(255, 213, 161);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 2;
+}
+
+.topheavy h1 {
+  font-family: 'myCustomFont', THE BOLD FONT, sans-serif;
+  font-size: 65px;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+.NAV2 {
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: bisque;
+  z-index: 1;
+}
+
+
+
+
+
+.NAV2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  font-family: 'yourFontName', Aragon sans, sans-serif;
+}
+
+.NAV2 li {
+  display: inline-block;
+}
+
+.NAV2 li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: 'yourFontName', Aragon sans, sans-serif;
+}
+
+.NAV2 li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+}
+
+
+
+
+
+  
+
+
+
+
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'myCustomFont', THE BOLD FONT, sans-serif;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
