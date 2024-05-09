@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssforproject.css">
+    <link rel="icon" type="image/x-icon" href="clacker.png">
+    <title>WATCHER</title>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    <div class="allforone">
+        <div class="skrrrt">
+            <h1 class="topster">WATCHER</h1>
+            <span style="font-size:57px;cursor:pointer; display: inline; padding-top: 45px; text-align: right; color: white;" onclick="openNav()">&#9776;</span>
+            
+        </div>
+
+        <div class="content">
+            <div class="topheavy">
+                <h1>MOVIE RANKINGS FOR FANS BY FANS!</h1>
+            </div>
+        <div class="NAV2">
+            <ul>
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#contact">VOTING</a></li>
+                <li><a href="#about">ABOUT</a></li>
+              </ul>
+        </div>
+            <h1>Heading</h1>
+            <p style="font-family: yourFontName;">Scroll down to see the effect.</p>
+
+<div style="display: inline-flex">
+            <div class="votingbox">
+                <img class="votingimage" src="requiem.jpg">
+                <br>
+                <button id="myButton" class="votable"><span>Vote</span></button>
+            </div>
+            <div class="votingbox">
+                <img class="votingimage" src="thegodfather.jpg">
+                <br>
+                <button id="myButton" class="votable"><span>Vote</span></button>
+            </div>
+            <div class="votingbox">
+                <img class="votingimage" src="jaws.jpg">
+                <br>
+                <button id="myButton" class="votable"><span>Vote</span></button>
+            </div>
+            <div class="votingbox">
+                <img class="votingimage" src="inception.jpg">
+                <br>
+                <button id="myButton" class="votable"><span>Vote</span></button>
+            </div>
+</div>
+
+
+<div style="display: inline-flex">
+    <div class="votingbox">
+        <img class="votingimage" src="gladiator.jpg">
+        <br>
+        <button id="myButton" class="votable"><span>Vote</span></button>
+    </div>
+    <div class="votingbox">
+        <img class="votingimage" src="2001aspaceodyssey.jpg">
+        <br>
+        <button id="myButton" class="votable"><span>Vote</span></button>
+    </div>
+    <div class="votingbox">
+        <img class="votingimage" src="fellowship.jpg">
+        <br>
+        <button id="myButton" class="votable"><span>Vote</span></button>
+    </div>
+    <div class="votingbox">
+        <img class="votingimage" src="mrgup.jpg">
+        <br>
+        <button id="myButton" class="votable"><span>Vote</span></button>
+    </div>
+</div>
+
+
+
+
+
+
+<div style="display: inline-flex">
+    <div class="votingbox">
+        <img class="votingimage" src="starwars.jpg">
+        <br>
+        <button id="myButton" class="votable"><span>Vote</span></button>
+    </div>
+    <div class="votingbox">
+        <img class="votingimage" src="jurrassicpark.jpg">
+        <br>
+        <button id="myButton" class="votable"><span>Vote</span></button>
+    </div>
+    <div class="votingbox">
+        <img class="votingimage" src="goodbadugly.jpg">
+        <br>
+        <button id="myButton" class="votable"><span>Vote</span></button>
+    </div>
+    <div class="votingbox">
+        <img class="votingimage" src="titanic.jpg">
+        <br>
+        <button id="myButton" onclick="changeText()" class="votable"><span>Vote</span></button>
+    </div>
+</div>
+
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+              
+        </div>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+    var buttons = document.querySelectorAll(".votable");
+
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    this.innerHTML = "<span>+1 Vote</span>";
+    this.style.transition = "none";
+    this.style.opacity = 1;
+    this.onmouseover = this.onmouseout = function() {
+      this.style.transform = "";
+    }
+    this.classList.remove("votable"); // remove the 'votable' class
+    this.classList.add("votedisabled"); // add a new 'clicked' class
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].disabled = true;
+    }
+  });
+}
+    
+    </script>
+</body>
+
+</html>
