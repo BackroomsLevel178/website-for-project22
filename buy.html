@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formysanity.css">
+    <link rel="icon" type="image/x-icon" href="clacker.png">
+    <title>WATCHER</title>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    <div class="allforone">
+        <div class="skrrrt">
+            <h1 class="topster">WATCHER</h1>
+            <span style="font-size:57px;cursor:pointer; display: inline; padding-top: 45px; text-align: right; color: white;" onclick="openNav()">&#9776;</span>
+            
+        </div>
+
+        <div class="content">
+            <div class="topheavy">
+                <h1>MOVIE RANKINGS FOR FANS BY FANS!</h1>
+            </div>
+        <div id="navbar" class="NAV2">
+            <ul>
+                <li><a href="websiteforproject.html">HOME</a></li>
+                <li><a href="error404.html">NEWS</a></li>
+                <li><a href="error404.html">REVIEWS</a></li>
+                <li><a href="voting.html">VOTING</a></li>
+                <li><a href="buy.html">BUY</a></li>
+        </div>
+            <h1 class="h1a">Check Out this Month's Issue!</h1>
+            <p class="desc"><b>WATCHER</b> is a captivating movie magazine that serves as a beacon for film enthusiasts around the globe. It is a monthly publication that dives deep into the world of cinema, offering a unique blend of in-depth features, reviews, and behind-the-scenes insights. From blockbuster hits to indie gems, <b>WATCHER</b> covers a broad spectrum of films, ensuring there's something for every movie lover.
+<br><br>
+                Each issue of <b>WATCHER</b> is packed with exclusive interviews with actors, directors, and industry insiders, giving readers a rare glimpse into the creative process behind their favorite films. The magazine also includes comprehensive reviews of the latest releases, with a balanced and insightful critique that helps readers decide what to watch next.
+                <br><br>
+                In addition to its rich content, <b>WATCHER</b> stands out for its stunning visual design. Each page is a feast for the eyes, with high-quality images and a sleek layout that reflects the artistry of the films it covers. Whether you're a casual viewer or a dedicated cinephile, <b>WATCHER</b> is your ultimate guide to the mesmerizing world of cinema. It's not just a magazine - it's a celebration of film that inspires, informs, and entertains. With <b>WATCHER</b>, every day is a movie day!</p>
+            <br>
+            <p class="desc">Get a preview of the first four pages right here!</p>
+            <br>
+
+            <div class="slideshow-container">
+
+                <!-- Slides -->
+                <div class="mySlides fade">
+                  <img src="first of list.png" style="width:100%">
+                </div>
+
+                <!-- Slides -->
+                <div class="mySlides fade">
+                  <img src="first of list2.png" style="width:100%">
+                </div>
+
+                <!-- Slides -->
+                <div class="mySlides fade">
+                  <img src="first of list3.png" style="width:100%">
+                </div>
+
+                <!-- Slides -->
+                <div class="mySlides fade">
+                  <img src="first of list4.png" style="width:100%">
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              </div>
+              
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+              
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+    var buttons = document.querySelectorAll(".votable");
+
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    this.innerHTML = "<span>+1 Vote</span>";
+    this.style.transition = "none";
+    this.style.opacity = 1;
+    this.onmouseover = this.onmouseout = function() {
+      this.style.transform = "";
+    }
+    this.classList.remove("votable"); // remove the 'votable' class
+    this.classList.add("votedisabled"); // add a new 'clicked' class
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].disabled = true;
+    }
+  });
+}
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

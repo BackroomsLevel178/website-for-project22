@@ -123,8 +123,10 @@ body {
   margin: auto;
 }
 
-
-
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+}
 
 
 
@@ -266,6 +268,19 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* This will create as many 200px columns as will fit in the container, and the columns will grow and shrink as needed */
   gap: 20px;
   background-color: #dea363;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.clutchnba2 {
+  display: grid; /* This will create a grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* This will create as many 200px columns as will fit in the container, and the columns will grow and shrink as needed */
+  gap: 20px;
+  background-color: #dea363;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
 }
 
 .boxlikeafish {
@@ -312,7 +327,6 @@ body {
   font-variation-settings: 'wght' 400, 'slnt' 0;
   font-size: 19px;
 }
-
 
 
 
