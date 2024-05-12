@@ -34,6 +34,7 @@ body {
     padding: 20px;
     text-align: center;
     background-color: bisque;
+    overflow: auto;
   }
 
 @font-face {
@@ -232,6 +233,139 @@ body {
 
 
 
+.wbutton {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: mycustomfont;
+}
+
+.wbutton1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.wbutton1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.clutchnba {
+  display: grid; /* This will create a grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* This will create as many 200px columns as will fit in the container, and the columns will grow and shrink as needed */
+  gap: 20px;
+  background-color: #dea363;
+}
+
+.boxlikeafish {
+  padding-top: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidetext {
+  text-align: left;
+  padding-left: 8px;
+  padding-right: 5px;
+  font-family: "cofo-sans-variable",sans-serif;
+  font-variation-settings: 'wght' 400, 'slnt' 0;
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+.sidebarheader {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #e1a433;
+  justify-content: center;
+  text-align: center;
+  margin: -15px;
+  padding: 5px;
+  color: rgb(255, 245, 224);
+  font-family: mycustomfont;
+  font-size: 25px;
+}
+
+.sidebar {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  float: right;
+  background-color: #ecd1a0;
+  padding: 15px;
+  margin-top: -40px;
+  width: 350px;
+}
+
+.supporttext {
+  margin-top: 25px;
+  margin-left: 25px;
+  float: left;
+  display: inline;
+  text-align: left;
+  max-width: 600px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.homeplayer {
+  width: 40%;
+  height: 405px;
+  float: left;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.newbro {
+  flex-wrap: wrap;
+}
+
+
 
 
 
@@ -383,6 +517,7 @@ img {vertical-align: middle;}
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  text-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 
